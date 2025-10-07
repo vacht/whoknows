@@ -1,0 +1,89 @@
+body.level4-screen {
+    background: radial-gradient(circle at center, #c86bfa 0%, #2b004f 100%);
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.level-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #ffb7d5;
+    box-shadow: 0 0 25px #ff5aa4;
+    max-width: 800px;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffb7d5;
+}
+
+.word-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.8rem;
+    margin: 2rem 0;
+}
+
+.word {
+    background: #ff5aa4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem;
+    font-family: inherit;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.word:hover {
+    transform: scale(1.05);
+    background: #ff82b5;
+}
+
+.word.selected {
+    background: #a3ffb7;
+    color: #2b004f;
+    transform: scale(1.1);
+}
+
+#feedback4 {
+    font-size: 0.8rem;
+    min-height: 20px;
+}
+
+#nextLevelBtn4 {
+    background: #ff5aa4;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    margin-top: 1rem;
+}
+
+#nextLevelBtn4:hover:enabled {
+    transform: scale(1.05);
+    background: #ff82b5;
+}
+
+#nextLevelBtn4:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

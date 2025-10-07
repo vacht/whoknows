@@ -1,0 +1,96 @@
+body.final-screen {
+    background: radial-gradient(circle at center, #ff99c8 0%, #2b004f 100%);
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.final-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #ffb7d5;
+    box-shadow: 0 0 25px #ff5aa4;
+    max-width: 800px;
+    animation: fadeIn 2s ease;
+}
+
+.title {
+    font-size: 1rem;
+    color: #ffb7d5;
+    margin-bottom: 1.5rem;
+    animation: fadeText 3s ease-in-out infinite alternate;
+}
+
+.dedication {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    white-space: pre-line;
+    min-height: 250px;
+    margin-bottom: 1rem;
+}
+
+#buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#yesBtn, #noBtn {
+    background: #ff5aa4;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s, left 0.4s, top 0.4s;
+    position: relative;
+}
+
+#yesBtn:hover {
+    transform: scale(1.1);
+    background: #a3ffb7;
+    color: #2b004f;
+}
+
+#noBtn:hover {
+    background: #ff8080;
+}
+
+#finalFeedback {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    min-height: 20px;
+}
+
+@keyframes fadeText {
+    from { text-shadow: 0 0 10px #ff5aa4; }
+    to { text-shadow: 0 0 25px #ffb7d5; }
+}
+
+/* corazones flotantes */
+.final-screen::before,
+.final-screen::after {
+    content: "💖 💞 💘 💝 💕 💓";
+    position: absolute;
+    width: 100%;
+    font-size: 1.5rem;
+    animation: floatHearts 10s linear infinite;
+    opacity: 0.2;
+}
+
+@keyframes floatHearts {
+    from { transform: translateY(100vh); }
+    to { transform: translateY(-100vh); }
+}
