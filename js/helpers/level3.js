@@ -3,13 +3,13 @@ export function initLevel3() {
     const feedback = document.getElementById("feedback");
     const nextBtn = document.getElementById("nextLevelBtn");
 
-    if (!keys.length) return; // evita error si no estamos en esta página
+    if (!keys.length) return; 
 
     keys.forEach((key) => {
     key.addEventListener("click", () => {
     const isCorrect = key.dataset.correct === "true";
 
-      keys.forEach(k => k.disabled = true); // desactivar todas
+    keys.forEach(k => k.disabled = true); 
 
     if (isCorrect) {
         feedback.textContent = "🔓 ¡Has abierto mi corazón!";

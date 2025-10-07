@@ -1,11 +1,11 @@
-// js/helpers/level2.js
+
 export function initLevel2() {
     const input = document.getElementById("answer2");
     const button = document.getElementById("submitBtn2");
     const feedback = document.getElementById("feedback2");
     const nextBtn = document.getElementById("nextLevelBtn2");
 
-  if (!input || !button) return; // Evita errores si no estamos en esta página
+    if (!input || !button) return; 
 
     button.addEventListener("click", () => {
     const response = input.value.trim().toLowerCase();
@@ -26,7 +26,7 @@ export function initLevel2() {
     }
 });
 
-  // Permitir presionar Enter
+
     input.addEventListener("keypress", (e) => {
     if (e.key === "Enter") button.click();
 });

@@ -9,7 +9,7 @@ export function initLevel1() {
     btn.addEventListener("click", () => {
     const isCorrect = btn.dataset.correct === "true";
 
-      photoButtons.forEach(b => b.disabled = true); // Desactiva todas las fotos
+      photoButtons.forEach(b => b.disabled = true); 
 
         if (isCorrect) {
         feedback.textContent = "💘 ¡Esa es! Sabía que elegirías la correcta.";

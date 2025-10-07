@@ -1,10 +1,10 @@
-// js/helpers/startScreen.js
+
 export function initStartScreen() {
   const input = document.getElementById("answer");
   const button = document.getElementById("submitBtn");
   const feedback = document.getElementById("feedback");
 
-  if (!input || !button) return; // evita error si no estamos en esta página
+  if (!input || !button) return; 
 
   button.addEventListener("click", () => {
     const response = input.value.trim().toLowerCase();
@@ -28,7 +28,7 @@ export function initStartScreen() {
     }
   });
 
-  // permite presionar Enter
+  
   input.addEventListener("keypress", (e) => {
     if (e.key === "Enter") button.click();
   });
