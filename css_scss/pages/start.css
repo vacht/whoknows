@@ -1,0 +1,77 @@
+/* Estilos para la pantalla de inicio del juego romántico */
+body.start-screen {
+    background: radial-gradient(circle at center, #ff99c8 0%, #2b004f 100%);
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border: 2px solid #ffb7d5;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #ff5aa4;
+    width: 85%;
+    max-width: 500px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+h1 {
+    font-size: 1.1rem;
+    color: #ffb7d5;
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    font-size: 0.8rem;
+    color: #ffe4f2;
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.8rem;
+    width: 80%;
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: #ff5aa4;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #ff82b5;
+}
+
+#feedback {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

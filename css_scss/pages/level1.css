@@ -1,0 +1,93 @@
+body.level1-screen {
+    background: radial-gradient(circle at center, #9a00ff 0%, #2b004f 100%);
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.level-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #ffb7d5;
+    box-shadow: 0 0 25px #ff5aa4, inset 0 0 15px #ffb7d5;
+    max-width: 700px;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffb7d5;
+    text-shadow: 0 0 8px #ff5aa4;
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.photo-option {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo-option img {
+    width: 100%;
+    border-radius: 12px;
+    border: 3px solid transparent;
+    transition: transform 0.2s ease, border-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 130, 181, 0.5);
+}
+
+.photo-option:hover img {
+    transform: scale(1.05);
+    border-color: #ff82b5;
+    box-shadow: 0 0 15px #ffb7d5;
+}
+
+#feedback {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    min-height: 20px;
+}
+
+#nextLevelBtn {
+    background: #ff5aa4;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s, box-shadow 0.3s;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px #ff5aa4;
+}
+
+#nextLevelBtn:hover:enabled {
+    transform: scale(1.05);
+    background: #ff82b5;
+    box-shadow: 0 0 15px #ffb7d5;
+}
+
+#nextLevelBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

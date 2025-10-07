@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel 1 💘 | Captura mi corazón</title>
+    <link rel="stylesheet" href="../../css_scss/styles.css">
+    <link rel="stylesheet" href="../../css_scss/level1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="level1-screen">
+    <div class="level-container">
+    <h1>💖 Nivel 1: Encuentra la foto correcta</h1>
+    <p>Entre estas tres fotos... hay una que es *la elegida*.  
+    ¿Podrás encontrarla? 😉</p>
+
+    <div class="photos-grid">
+        <button class="photo-option" data-correct="false">
+        <img src="../../assets/img/7.jpg" alt="foto 1">
+        </button>
+        <button class="photo-option" data-correct="true">
+        <img src="../../assets/img/2.jpg" alt="foto 2">
+        </button>
+        <button class="photo-option" data-correct="false">
+        <img src="../../assets/img/5.jpg" alt="foto 3">
+        </button>
+    </div>
+
+    <p id="feedback"></p>
+
+    <button id="nextLevelBtn" disabled>➡️ Siguiente nivel</button>
+    </div>
+
+    <script type="module" src="../../js/index.js"></script>
+</body>
+</html>
