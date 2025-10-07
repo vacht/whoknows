@@ -19,6 +19,7 @@ Mixins
 
 /*Estilos de los elementos que se repitirán en el sitio web*/
 @import "./components_blocks/_buttons.css";
-@import "./pages/start.css";
 
+@import "./pages/start.css";
 @import "./pages/_level1.css";
+

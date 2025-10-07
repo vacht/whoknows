@@ -16,9 +16,8 @@ export function initStartScreen() {
         input.disabled = true;
 
         setTimeout(() => {
-        // 👇 Ruta corregida según tu estructura de carpetas
-        window.location.href = "./pages/level1.html";
-        }, 2000);
+  window.location.href = "./pages/level1.html";
+  }, 2000);
     } else if (response === "") {
         feedback.textContent = "💭 Escribe una respuesta antes de continuar.";
         feedback.style.color = "#fff";
