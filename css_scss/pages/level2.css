@@ -1,0 +1,80 @@
+body.level2-screen {
+    background: radial-gradient(circle at center, #ff99c8 0%, #2b004f 100%);
+    color: #fff;
+    font-family: "Press Start 2P", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+
+.level-container {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 2px solid #ffb7d5;
+    box-shadow: 0 0 25px #ff5aa4;
+    max-width: 600px;
+    animation: fadeIn 1s ease;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ffb7d5;
+}
+
+.phrase {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.blank {
+    color: #ffb7d5;
+    text-shadow: 0 0 8px #ff82b5;
+}
+
+input {
+    padding: 0.8rem;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-family: inherit;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: #ff5aa4;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-family: inherit;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ff82b5;
+}
+
+#feedback2 {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    min-height: 20px;
+}
+
+#nextLevelBtn2:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
